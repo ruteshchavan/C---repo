@@ -1,19 +1,19 @@
+/*
+# WAP to calculate factorial of a number. 
+*/
+
 #include<iostream>
 using namespace std;
 
-int fact(int n) {
+int main() {
+    int n;
+    cout<<"Enter factorial number :"<<endl;
+    cin>>n;
     int factorial=1;
-    for(int i=1;i<=n;i++){
+
+    for(int i=1;i<=n;i++) {
         factorial*=i;
     }
-    return factorial;
-}
+    cout<<"facorial of "<<n<<" is : "<<factorial<<endl;
 
-int main(){
-    int n;
-    cout<<"Enter the number :"<<endl;
-    cin>>n;
-
-    int answer=fact(n);
-    cout<<answer<<endl;
 }

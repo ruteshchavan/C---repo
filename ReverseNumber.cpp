@@ -1,19 +1,22 @@
-// WAp to reverse the given number.
+/*
+# WAP to reverse a number.
+*/
+
 #include<iostream>
 using namespace std;
 
 int main() {
-
+    
     int n;
-    cout<<"Enter the Number : "<<endl;
+    cout<< "Enter the Number :" << endl;
     cin>>n;
-    int sum=0;
-    // int lastdigit;
+    int reverse=0;  // to store the number of digits
 
-    while(n>0) {
+    while (n>0)
+    {  
         int lastdigit=n%10;
-        sum=sum*10 + lastdigit;
-        n=n/10;
+        reverse=reverse*10 + lastdigit;
+        n/=10;
     }
-    cout<<sum<<endl;
+       cout<<"Reverse number is :"<<" "<<reverse;
 }
