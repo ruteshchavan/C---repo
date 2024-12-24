@@ -15,7 +15,7 @@ int main() {
     cout<<"Enter the element to be searched :"<<endl;
     cin>>key;
 
-    for(int i=0;i<7;i++) {
+    for(int i=0;i<sizeof(arr)/sizeof(arr[0]);i++) {   
         if(arr[i]==key) {
             ans=i;  // element is found at (i'th) index
             break;  // break is used if our element is at index 0, so there's no need to traverse the array.
