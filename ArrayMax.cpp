@@ -6,7 +6,7 @@
   Using max() function we are comparing 0 and n-1 element and print maximum value.
   Iterate over array and update and output elements. 
   eg- array[3]={2 , 5 , 3}
-      output - 2 ,5 ,5 
+      output - 2 ,3 ,5 
 */  
 
 #include<iostream>
